@@ -31,7 +31,9 @@ module.exports = {
   },
   Mutation: {
     bookTrips: async (_, { launchIds }, { dataSources }) => {
-      const results = await dataSources.userAPI.bookTrips({ launchIds });
+      console.log('asdas')
+      const results = await dataSources.userAPI.bookTrips({ launchIds })
+      console.log('asdas')
       const launches = await dataSources.launchAPI.getLaunchesByIds({
         launchIds,
       });

@@ -34,7 +34,7 @@ class UserAPI extends DataSource {
   async bookTrips({ launchIds }) {
     const userId = this.context.user.id;
     if (!userId) return;
-
+    
     let results = [];
 
     // for each launch id, try to book the trip and add it to the results array
